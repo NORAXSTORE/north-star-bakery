@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Star Bakery | Contact</title>
+  <meta name="description" content="Send North Star Bakery a pre-order request or a general question, and find our hours and location.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="images/bakery-logo.png" alt="North Star Bakery logo: a loaf of bread with a wheat stalk" width="72" height="61">
+      <span class="brand-name">North Star Bakery</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a class="list-link" href="products.html#preorder-planner">My List <span class="list-count" data-list-count>0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <h1>Pre-Order and Inquiry Form</h1>
+      <p>Request a pre-order for pickup or send us a general question. We reply to every message within one business day. Fields marked with * are required.</p>
+
+      <div class="form-success" id="form-success" role="status" hidden></div>
+
+      <form id="order-form" action="#" method="post" novalidate>
+        <div class="form-field">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error">
+          <span class="error-message" id="name-error"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error">
+          <span class="error-message" id="email-error"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="requestType">Request type *</label>
+          <select id="requestType" name="requestType" aria-describedby="requestType-error">
+            <option value="">Choose one</option>
+            <option value="preorder">Pre-order for pickup</option>
+            <option value="custom-cake">Custom cake request</option>
+            <option value="event">Event or catering order</option>
+            <option value="question">General question</option>
+          </select>
+          <span class="error-message" id="requestType-error"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="pickupDate">Pickup date (for orders)</label>
+          <input type="date" id="pickupDate" name="pickupDate" aria-describedby="pickupDate-hint pickupDate-error">
+          <span class="hint" id="pickupDate-hint">Choose a date from tomorrow up to 30 days ahead. We are closed on Mondays.</span>
+          <span class="error-message" id="pickupDate-error"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="itemDetails">Item details</label>
+          <textarea id="itemDetails" name="itemDetails" rows="5" aria-describedby="itemDetails-hint itemDetails-error"></textarea>
+          <span class="hint" id="itemDetails-hint">List the items and quantities you want, or type your question.</span>
+          <span class="error-message" id="itemDetails-error"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="allergyNotes">Allergy notes (if applicable)</label>
+          <textarea id="allergyNotes" name="allergyNotes" rows="3" aria-describedby="allergy-count allergyNotes-error"></textarea>
+          <span class="hint" id="allergy-count">0 / 200 characters</span>
+          <span class="error-message" id="allergyNotes-error"></span>
+        </div>
+
+        <div class="form-field checkbox-field">
+          <input type="checkbox" id="rememberMe" name="rememberMe" checked>
+          <label for="rememberMe">Remember my name and email on this device</label>
+        </div>
+
+        <button type="submit" class="button">Send request</button>
+      </form>
+    </section>
+
+    <section class="section info-row">
+      <div>
+        <h2>Location</h2>
+        <address>
+          North Star Bakery<br>
+          214 Maple Street<br>
+          Northfield, GA 30000<br>
+          (555) 014-2290
+        </address>
+        <p>Pickup orders are ready at the front counter. Free street parking is available on Maple Street.</p>
+      </div>
+      <div>
+        <h2>Hours of Operation</h2>
+        <ul class="plain-list">
+          <li>Tuesday to Friday: 6:30 a.m. to 6:00 p.m.</li>
+          <li>Saturday: 7:00 a.m. to 4:00 p.m.</li>
+          <li>Sunday: 8:00 a.m. to 2:00 p.m.</li>
+          <li>Monday: Closed</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 North Star Bakery. Baked by hand, shared with our neighbors.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

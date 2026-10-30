@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Star Bakery | Products</title>
+  <meta name="description" content="Breads, pastries, and cakes from North Star Bakery, with price ranges and a pre-order planner.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="images/bakery-logo.png" alt="North Star Bakery logo: a loaf of bread with a wheat stalk" width="72" height="61">
+      <span class="brand-name">North Star Bakery</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" aria-current="page">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="list-link" href="products.html#preorder-planner">My List <span class="list-count" data-list-count>0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <h1>Our Products</h1>
+      <p>Everything is baked fresh each morning. Prices below are ranges, because sizes and seasonal flavors change. There is no online checkout. Build a pre-order list below and send it to us, and we will confirm your order by email.</p>
+      <img class="wide-image" src="images/bakery-bread.jpg" alt="Rustic sourdough and whole wheat loaves with floured, crackly crusts stacked in a glass display case" width="800" height="800">
+    </section>
+
+    <section class="section">
+      <h2>Product Categories</h2>
+      <div class="card-row">
+        <article class="card">
+          <h3>Breads</h3>
+          <p>Sourdough, whole wheat, rye, and baguettes made with slow fermentation and local flour.</p>
+          <p class="price">$4 to $9 per loaf</p>
+        </article>
+        <article class="card">
+          <h3>Pastries</h3>
+          <p>Croissants, cinnamon rolls, scones, cookies, and seasonal danishes baked before sunrise.</p>
+          <p class="price">$2.50 to $6 each</p>
+        </article>
+        <article class="card">
+          <h3>Cakes</h3>
+          <p>Layer cakes and sheet cakes for birthdays, weddings, and office events. Order 3 days ahead.</p>
+          <p class="price">$28 to $65 per cake</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE FEATURE: Pre-order planner (built with JavaScript in js/script.js) -->
+    <section class="section planner" id="preorder-planner" aria-labelledby="planner-heading">
+      <h2 id="planner-heading">Pre-Order Planner</h2>
+      <p>Choose a category, then add the items you want. Your list is saved in this browser, so you can come back later and it will still be here.</p>
+
+      <div class="filter-buttons" role="group" aria-label="Filter products by category" id="filter-buttons">
+        <!-- Category buttons are created by JavaScript from the categories array -->
+      </div>
+
+      <div class="planner-layout">
+        <div>
+          <p class="results-note" id="results-note" aria-live="polite"></p>
+          <ul class="product-grid" id="product-grid">
+            <!-- Product cards are created by JavaScript from the products array -->
+          </ul>
+          <noscript><p>Turn on JavaScript to use the pre-order planner, or send us your order on the <a href="contact.html">Contact page</a>.</p></noscript>
+        </div>
+
+        <aside class="order-panel" aria-labelledby="list-heading">
+          <h3 id="list-heading">My Pre-Order List</h3>
+          <p class="empty-message" id="empty-message">Your list is empty. Add an item to get started.</p>
+          <ul class="order-list" id="order-list"></ul>
+          <p class="order-total" id="order-total" aria-live="polite"></p>
+          <div class="panel-actions">
+            <a class="button" id="send-list" href="contact.html">Send list to pre-order form</a>
+            <button type="button" class="button button-outline" id="clear-list">Clear list</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 North Star Bakery. Baked by hand, shared with our neighbors.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

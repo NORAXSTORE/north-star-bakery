@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Star Bakery | Home</title>
+  <meta name="description" content="North Star Bakery is a neighborhood bakery baking bread, pastries, and cakes by hand every morning.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="images/bakery-logo.png" alt="North Star Bakery logo: a loaf of bread with a wheat stalk" width="72" height="61">
+      <span class="brand-name">North Star Bakery</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="list-link" href="products.html#preorder-planner">My List <span class="list-count" data-list-count>0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-image" src="images/bakery-storefront.jpg" alt="The North Star Bakery storefront window filled with fresh loaves, croissants, and pastries on wooden shelves" width="1200" height="715">
+      <div class="hero-text">
+        <h1>Welcome to North Star Bakery</h1>
+        <p>Your neighborhood bakery, baking bread, pastries, and celebration cakes by hand every morning since 2012. Stop in on your commute, bring the whole family, or let us bake for your next event.</p>
+        <p id="welcome-back" class="welcome-back" hidden></p>
+        <a class="button" href="products.html#preorder-planner">Plan a pre-order</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>What We're Known For</h2>
+      <div class="card-row">
+        <article class="card">
+          <h3>Slow-Rise Sourdough</h3>
+          <p>Our signature loaves rise for 24 hours, giving them a crackly crust and a soft, tangy middle.</p>
+        </article>
+        <article class="card">
+          <h3>Flaky Morning Pastries</h3>
+          <p>Butter croissants, cinnamon rolls, and seasonal danishes come out of the oven before 7 a.m.</p>
+        </article>
+        <article class="card">
+          <h3>Cakes for Every Occasion</h3>
+          <p>Birthday, graduation, or office party, our custom cakes are made to order with local ingredients.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section featured">
+      <h2>Featured Item of the Week: Brown Butter Cookies</h2>
+      <div class="featured-layout">
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/bakery-feature-large.jpg">
+          <img src="images/bakery-feature-small.jpg" alt="Trays of golden brown butter cookies and chocolate chunk cookies in the bakery display case" width="700" height="700">
+        </picture>
+        <div>
+          <p>This week we are featuring our brown butter cookies, baked in small batches with toasted butter, sea salt, and dark chocolate. They are $2.50 each or $13 for a half dozen.</p>
+          <p>Want a box for an event? Add them to your pre-order list and we will have them ready for pickup.</p>
+          <a class="button button-outline" href="products.html#preorder-planner">Add to my pre-order list</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>A Welcome from Our Bakers</h2>
+      <p>Press play to hear a short welcome message from the North Star Bakery team.</p>
+      <audio controls preload="none">
+        <source src="media/bakery-welcome.mp3" type="audio/mpeg">
+        Your browser does not support the audio element. You can still read about our bakery on the <a href="about.html">About page</a>.
+      </audio>
+    </section>
+
+    <section class="section info-row">
+      <div>
+        <h2>Hours</h2>
+        <ul class="plain-list">
+          <li>Tuesday to Friday: 6:30 a.m. to 6:00 p.m.</li>
+          <li>Saturday: 7:00 a.m. to 4:00 p.m.</li>
+          <li>Sunday: 8:00 a.m. to 2:00 p.m.</li>
+          <li>Monday: Closed</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Location</h2>
+        <address>
+          214 Maple Street<br>
+          Northfield, GA 30000<br>
+          (555) 014-2290
+        </address>
+        <p>Free street parking is available on Maple Street and Elm Avenue.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 North Star Bakery. Baked by hand, shared with our neighbors.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
